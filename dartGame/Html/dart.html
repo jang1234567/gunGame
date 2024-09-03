@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다트게임</title>
+    <link rel="stylesheet" href="./../Css/dart.css">
+    <script src="./../JS/dart.js"></script>
+    <!-- Chart.js 라이브러리 추가 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Annotation 플러그인 추가 -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.0/dist/chartjs-plugin-annotation.min.js"></script>
+
+</head>
+
+<body>
+    <h1 class="title">다트게임</h1>
+    <!-- 스코어보드판 -->
+    <div class="scoreBoard">
+        <div id="onePoint">1점</div>
+        <div id="twoPoint">2점</div>
+        <div id="threePoint">3점</div>
+        <div id="fourPoint">4점</div>
+        <div id="fivePoint">5점</div>
+    </div>
+    <!-- 결과값 보여주기 -->
+    <div class="result"> 결과
+        <div id="resultDisplay">점수와 결과가 여기에 표시됩니다.</div> <!-- 결과 표시 요소 -->
+    </div>
+    <!-- 누적합 그래프로 보여주기 -->
+    <div class="scoreGraph">
+        <canvas id="scoreChart"></canvas>
+    </div>
+</body>
+
+</html>

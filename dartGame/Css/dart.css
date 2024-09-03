@@ -1,0 +1,130 @@
+/* 기본 */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: #f0f0f0;
+}
+
+.scoreBoard {
+    margin-top: 50px;
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background-color: #fff;
+    border: 5px solid black;
+    background-image:  
+        repeating-linear-gradient(0deg, transparent, transparent 40px, #ddd 40px, #ddd 41px),
+        repeating-linear-gradient(-90deg, transparent, transparent 40px, #ddd 40px, #ddd 41px);
+    background-size: 80px 80px; /* 그리드 셀의 크기 조정 */
+    cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+}
+
+
+/* 각 점수 공통 */
+.scoreBoard div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+    background-color: transparent; /* 배경색을 투명하게 설정 */
+}
+
+/* 1점 영역 */
+#onePoint {
+    background-color: rgba(0, 255, 255, 0.3); /* 반투명 색상 */
+
+    width: 650px;
+    height: 650px;
+    
+}
+
+/* 2점 영역 */
+#twoPoint {
+    background-color: rgba(144, 238, 144, 0.3); /* 반투명 색상 */
+    width: 500px;
+    height: 500px;
+}
+
+/* 3점 영역 */
+#threePoint {
+    background-color: rgba(255, 255, 0, 0.3); /* 반투명 색상 */
+    width: 350px;
+    height: 350px;
+}
+
+/* 4점 영역 */
+#fourPoint {
+    background-color: rgba(255, 165, 0, 0.3); /* 반투명 색상 */
+    width: 200px;
+    height: 200px;
+    /* color: black; */
+}
+
+/* 5점 영역 */
+#fivePoint {
+    background-color: rgba(255, 0, 0, 0.3); /* 반투명 색상 */
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    color: white;
+}
+
+.result{
+    /* background-color:darkgrey; */
+    border: 5px solid black;
+    width: 350px;
+    height: 320px;
+    margin: 20px 0;
+    padding: 10px 0 0 10px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+/* 결과값 보여주기 */
+#resultDisplay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* 차트 보여주기 */
+.scoreGraph{
+    /* background-color: skyblue; */
+    border: 5px solid black;
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin-bottom: 200px;
+}
+
+#scoreChart{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* CSS: 클릭 위치 표시 */
+.click-marker {
+    position: absolute;
+    border-radius: 50%;
+    /* border: 5px solid red; */
+    background-color: red; /* 클릭 위치 마커 색상 */
+    width: 10px; /* 클릭 위치 마커 크기 */
+    height: 10px;
+    pointer-events: none; /* 클릭 이벤트를 무시 */
+}
+
+
