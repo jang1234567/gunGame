@@ -1,0 +1,283 @@
+/* 기본 */
+a {
+    text-decoration: none;
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: #f0f0f0;
+}
+
+.playGame{
+    display: flex;
+    /* align-items: center; */
+}
+
+.scoreBoard {
+    margin: 0px 50px;
+    position: relative;
+    width: 900px;
+    height: 900px;
+    background-color: black;
+    border: 5px solid black;
+    background-image:  
+        repeating-linear-gradient(0deg, transparent, transparent 40px, #ddd 40px, #ddd 41px),
+        repeating-linear-gradient(-90deg, transparent, transparent 40px, #ddd 40px, #ddd 41px);
+    background-size: 80px 80px; /* 그리드 셀의 크기 조정 */
+    cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+}
+
+
+/* 각 점수 공통 */
+.scoreBoard div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+    background-color: transparent; /* 배경색을 투명하게 설정 */
+}
+
+/* 1점 영역 */
+#onePoint {
+    background-color: white; /* 반투명 색상 */
+    width: 850px;
+    height: 850px;
+}
+
+/* 2점 영역 */
+#twoPoint {
+    background-color: white; /* 반투명 색상 */
+    width: 765px;
+    height: 765px;
+}
+
+/* 3점 영역 */
+#threePoint {
+    background-color: black; /* 반투명 색상 */
+    width: 680px;
+    height: 680px;
+    color: white;
+}
+
+/* 4점 영역 */
+#fourPoint {
+    background-color: black; /* 반투명 색상 */
+    width: 595px;
+    height: 595px;
+    color: white;
+    border: solid 5px white;
+}
+
+/* 5점 영역 */
+#fivePoint {
+    background-color:  skyblue; /* 반투명 색상 */
+    width: 510px;
+    height: 510px;
+}
+
+/* 6점 영역 */
+#sixPoint {
+    background-color: skyblue; /* 반투명 색상 */
+    width: 425px;
+    height: 425px;
+}
+
+/* 7점 영역 */
+#sevenPoint {
+    background-color: red; /* 반투명 색상 */
+    width: 340px;
+    height: 340px;
+}
+
+/* 8점 영역 */
+#eightPoint {
+    background-color:red; /* 반투명 색상 */
+    width: 255px;
+    height: 255px;
+}
+
+/* 9점 영역 */
+#ninePoint {
+    background-color: yellow; /* 반투명 색상 */
+    width: 170px;
+    height: 170px;
+}
+
+/* 10점 영역 */
+#tenPoint {
+    background-color: yellow;/* 반투명 색상 */
+    width: 85px;
+    height: 85px;
+}
+
+.result{
+    /* background-color:darkgrey; */
+    border: 5px solid black;
+    width: 350px;
+    height: 320px;
+    margin: 20px 0;
+    padding: 10px 0 0 10px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+/* 결과값 보여주기 */
+#resultDisplay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.scoreNumber{
+    /* background-color: aqua; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 5px solid black;
+}
+
+.tryLength {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse; /* 테두리 간격을 없앰 */
+}
+
+th, td {
+    border: 5px solid black; /* 연한 회색 테두리 */
+    padding: 8px; /* 셀 내부 여백 */
+    text-align: center; 
+    font-weight: bold;
+}
+
+
+
+/* 차트 보여주기 */
+.scoreGraph{
+    /* background-color: skyblue; */
+    border: 5px solid black;
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+#scoreChart{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* 모달 */
+.resultModal{
+    font: bold;
+    display: flex;
+    /* margin: auto; */
+    
+}
+
+#modalOpenButton {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 200px;
+    height: 100px;
+    background-color: #007bff; /* 파란색 배경 */
+    color: #fff; /* 흰색 텍스트 */
+    cursor: pointer;
+    font-weight: bold; /* 텍스트를 진하게 */
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center; /* 텍스트 중앙 정렬 */
+    display: flex; /* 버튼 중앙 정렬을 위한 flexbox */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    border: none; /* 기본 버튼 테두리 제거 */
+    transition: background-color 0.3s, box-shadow 0.3s; /* 부드러운 효과 */
+}
+
+#modalOpenButton:hover {
+    background-color: #0056b3; /* 어두운 파란색 배경 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+}
+
+
+  #goBack{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 200px;
+    height: 100px;
+    background-color: #007bff; /* 파란색 배경 */
+    color: #fff; /* 흰색 텍스트 */
+    cursor: pointer;
+    font-weight: bold; /* 텍스트를 진하게 */
+    font-size: 24px;
+    border-radius: 10px;
+    text-align: center; /* 텍스트 중앙 정렬 */
+    display: flex; /* 버튼 중앙 정렬을 위한 flexbox */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    border: none; /* 기본 버튼 테두리 제거 */
+    transition: background-color 0.3s, box-shadow 0.3s; /* 부드러운 효과 */
+}
+
+  #goBack:hover {
+    background-color: #0056b3; /* 어두운 파란색 배경 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
+}
+
+  
+  #modalContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  #modalContent {
+    position: relative;
+    background-color: #ffffff;
+    width: 800px;
+    height: 600px;
+    padding: 15px;
+  }
+
+  #modalCloseButton{
+    position: absolute;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 350px;
+  }
+
+  
+  #modalContainer.hidden {
+    display: none;
+  }
+
+  
+
+
+
+
+
+
+

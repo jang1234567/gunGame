@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    overflow: hidden;
+}
+
+.intro-screen {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    position: absolute;
+    top: 20%;
+    animation: fadeIn 5s ease-in-out infinite;
+}
+
+.bullet {
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background: linear-gradient(90deg, #fff, #f00);
+    top: 50%;
+    animation: bulletMove 5s ease-in-out infinite;
+}
+
+.gameStart {
+    position: absolute;
+    bottom: 400px; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gameStart button {
+    font-size: 2rem; /* 큰 텍스트 */
+    padding: 20px 40px; /* 큰 버튼 */
+    background-color: #ff4500; /* 눈에 띄는 색상 */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.gameStart button:hover {
+    background-color: #ff6347; /* 호버 시 색상 변경 */
+    transform: scale(1.05); /* 호버 시 크기 확대 */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes bulletMove {
+    0% {
+        left: -150px;
+    }
+    100% {
+        left: 110vw;
+    }
+}

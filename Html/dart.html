@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다트게임</title>
+    <link rel="stylesheet" href="./../Css/dart.css">
+    <script type="module" src="./../JS/dart.js"></script>
+   <!-- Chart.js 라이브러리 추가 -->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <!-- Annotation 플러그인 추가 -->
+   <script
+       src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.0/dist/chartjs-plugin-annotation.min.js"></script>
+
+</head>
+
+<body>
+    <h1 class="title">GUN GAME</h1>
+    <!-- 스코어보드판 -->
+    <div class="playGame">
+        <div class="scoreBoard">
+            <div id="onePoint">1점</div>
+            <div id="twoPoint">2점</div>
+            <div id="threePoint">3점</div>
+            <div id="fourPoint">4점</div>
+            <div id="fivePoint">5점</div>
+            <div id="sixPoint">6점</div>
+            <div id="sevenPoint">7점</div>
+            <div id="eightPoint">8점</div>
+            <div id="ninePoint">9점</div>
+            <div id="tenPoint">10점</div>
+        </div>
+        <!-- 결과값 보여주기 -->
+        <div class="allResult">
+            <div class="result"> 결과
+                <div id="resultDisplay">점수와 결과가 여기에 표시됩니다.</div>
+            </div>
+            <!-- 점수판 -->
+            <div class="scoreNumber">
+                <h1>점수판</h1>
+                <div class="tryLength">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">1차시기</th>
+                                <th>2차시기</th>
+                                <th>3차시기</th>
+                                <th>4차시기</th>
+                                <th>5차시기</th>
+                                <th>6차시기</th>
+                                <th>7차시기</th>
+                                <th>8차시기</th>
+                                <th>9차시기</th>
+                                <th>10차시기</th>
+                                <th>총점</th>
+                                <th>평균</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td> <!-- 총점 -->
+                                <td></td> <!-- 평균 -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 모달 -->
+            <div class="resultModal">
+                <button id="modalOpenButton">그래프로 보기!</button>
+                <span>
+                    <a href="./start.html">
+                        <button id="goBack">처음부터 다시!</button></a>
+                </span>
+
+                <div id="modalContainer" class="hidden">
+                    <div id="modalContent">
+                        <!-- 누적합 그래프로 보여주기 -->
+                        <div class="scoreGraph">
+                            <canvas id="scoreChart"></canvas>
+                        </div>
+                        <div class="closeModal">
+                        </div>
+                        <button id="modalCloseButton">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+
+
+</body>
+
+</html>
