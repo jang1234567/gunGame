@@ -1,2 +1,2 @@
 # gunGame
-링크 : https: // dartgame.netlify.app
+링크 : <a> https: // dartgame.netlify.app</a>
