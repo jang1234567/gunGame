@@ -3,68 +3,41 @@ a {
     text-decoration: none;
   }
 body {
-    height: 100vh;
-    width: 100vw; /* 화면 너비의 100% */
+    width: 1920px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0px;
-    background-color: #f0f0f0;
-    transform: scale(0.9);
-    transform-origin: center; 
+    background-color: #313840;
+    /* transform: scale(0.9); */
+    /* transform-origin: center; */
 }
 
-/* 모바일 */
-@media (max-width: 480px) {
-    body {
-        transform: scale(0.3); /* 모바일에서 축소 비율 조정 */
-    }
+.title{
+    color: #FF9547;
+    font-weight: bold;
+    font-size:35px;
 }
 
-/* 태블릿 */
-@media (min-width: 481px) and (max-width: 768px) {
-    body {
-        transform: scale(0.3); /* 태블릿에서 축소 비율 조정 */
-    }
-}
-/* 노트북 */
-@media (min-width: 769px) and (max-width: 1200px) {
-    body {
-        transform: scale(0.5); /* 노트북에서 축소 비율 조정 */
-    }
-}
-
-/* 데스크탑 */
-@media (min-width: 1201px) {
-    body {
-        transform: scale(0.9); /* 데스크탑에서 원본 크기 */
-    }
-}
-
-.container {
-    width: 900px;
-    height: 900px;
-    /* 화면 크기에 따라 크기를 조절 */
-    transform: scale(0.9); /* 화면 축소 비율 조정 */
-    transform-origin: 0 0; /* 화면의 왼쪽 상단을 기준으로 축소 */
-}
 
 .playGame{
     display: flex;
+    margin-top: 150px;
     /* align-items: center; */
 }
 
 .scoreBoard {
-    margin: 0px 50px;
+    margin: 0 50px;
     position: relative;
-    width: 900px;
-    height: 900px;
-    background-color: black;
+    width: 850px;
+    height: 850px;
+    background-color: #192128;
     border: 5px solid black;
-    background-image:  
+    /* background-image:  
         repeating-linear-gradient(0deg, transparent, transparent 40px, #ddd 40px, #ddd 41px),
-        repeating-linear-gradient(-90deg, transparent, transparent 40px, #ddd 40px, #ddd 41px);
+        repeating-linear-gradient(-90deg, transparent, transparent 40px, #ddd 40px, #ddd 41px); */
     background-size: 80px 80px; /* 그리드 셀의 크기 조정 */
     cursor: pointer; /* 마우스 커서를 포인터로 변경 */
 }
@@ -77,10 +50,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    border: 5px solid black;
+    border: 1px solid black;
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     background-color: transparent; /* 배경색을 투명하게 설정 */
 }
@@ -88,104 +61,223 @@ body {
 /* 1점 영역 */
 #onePoint {
     background-color: white; /* 반투명 색상 */
-    width: 850px;
-    height: 850px;
+    width: 650px;
+    height: 650px;
 }
 
 /* 2점 영역 */
 #twoPoint {
     background-color: white; /* 반투명 색상 */
-    width: 765px;
-    height: 765px;
+    width: 585px;
+    height: 585px;
 }
 
 /* 3점 영역 */
 #threePoint {
     background-color: black; /* 반투명 색상 */
-    width: 680px;
-    height: 680px;
+    width: 520px;
+    height: 520px;
     color: white;
 }
 
 /* 4점 영역 */
 #fourPoint {
     background-color: black; /* 반투명 색상 */
-    width: 595px;
-    height: 595px;
+    width: 455px;
+    height: 455px;
     color: white;
-    border: solid 5px white;
+    border: solid 1px white;
 }
 
 /* 5점 영역 */
 #fivePoint {
     background-color:  skyblue; /* 반투명 색상 */
-    width: 510px;
-    height: 510px;
+    width: 390px;
+    height: 390px;
 }
 
 /* 6점 영역 */
 #sixPoint {
     background-color: skyblue; /* 반투명 색상 */
-    width: 425px;
-    height: 425px;
+    width: 325px;
+    height: 325px;
 }
 
 /* 7점 영역 */
 #sevenPoint {
-    background-color: red; /* 반투명 색상 */
-    width: 340px;
-    height: 340px;
+    background-color: #D33D46; /* 반투명 색상 */
+    width: 260px;
+    height: 260px;
 }
 
 /* 8점 영역 */
 #eightPoint {
-    background-color:red; /* 반투명 색상 */
-    width: 255px;
-    height: 255px;
+    background-color:#D33D46; /* 반투명 색상 */
+    width: 195px;
+    height: 195px;
 }
 
 /* 9점 영역 */
 #ninePoint {
-    background-color: yellow; /* 반투명 색상 */
-    width: 170px;
-    height: 170px;
+    background-color: #EFCE59; /* 반투명 색상 */
+    width: 130px;
+    height: 130px;
 }
 
 /* 10점 영역 */
 #tenPoint {
-    background-color: yellow;/* 반투명 색상 */
-    width: 85px;
-    height: 85px;
+    background-color: #EFCE59;/* 반투명 색상 */
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.allResult{
+    /* border: 1px solid white; */
+    width: 700px;
+    height: 850px;
+    
 }
 
 .result{
-    /* background-color:darkgrey; */
-    border: 5px solid black;
-    width: 350px;
-    height: 320px;
-    margin: 20px 0;
-    padding: 10px 0 0 10px;
-    font-size: 24px;
+    background-color:#192128;
+    /* border: 5px solid aqua; */
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    color: white;
+    font-size: 15px;
     font-weight: bolder;
 }
 
+.result div{
+margin-left: 28px
+}
+
 /* 결과값 보여주기 */
-#resultDisplay{
+#resultScore{
+/* border: 1px solid yellow;  */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-right: 50px;
+}
+
+#score{
+    margin-top: 10px;
+    font-size: 40px;
+    /* padding-right: 0px; */
+}
+#score2{
+   font-size: 15px;
+}
+
+/* 결과값 보여주기 */
+#resultChance{
+    /* border: 1px solid yellow;  */
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 50px;
+ }
+
+ #chance{
+    margin-top: 10px;
+    font-size: 40px;
+    /* padding-right: 0px; */
+}
+#chance2{
+    font-size: 15px;
+}
+
+/* 결과값 보여주기 */
+#resultTotalScore{
+    /* border: 1px solid yellow;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 50px;
+ }
+
+ #totalScore{
+    margin-top: 10px;
+    font-size: 40px;
+    /* padding-right: 0px; */
+}
+#totalScore2{
+    font-size: 15px;
+}
+
+/* 좌표 */
+.second-container{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#location{
+    /* border:solid 1px white; */
+    border-radius: 10px;
+    background-color: #192128;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    color: black;
-    font-weight: bold;
-    font-size: 24px;
+}
+#location2{
+    color: white;
+}
+
+span{
+    color: white;
+}
+
+#x{
+ color: white;
+}
+
+#y{
+    color: white;
+   }
+
+
+
+
+/* 결과값 보여주기 */
+#resultAverageScore{
+    /* border: 1px solid yellow;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 50px;
+ }
+
+ #averageScore{
+    margin-top: 10px;
+    font-size: 40px;
+    /* padding-right: 0px; */
+}
+#averageScore2{
+    font-size: 15px;
 }
 
 .scoreNumber{
-    /* background-color: aqua; */
+    background-color: #192128;
+    border-radius: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
-    border: 5px solid black;
+    /* border: 5px solid black; */
 }
+
+.scoreNumber h1{
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20px;
+} 
 
 .tryLength {
     display: flex;
@@ -199,44 +291,33 @@ table {
 }
 
 th, td {
-    border: 5px solid black; /* 연한 회색 테두리 */
+    /* border: 5px solid black;  */
+    color: white;
     padding: 8px; /* 셀 내부 여백 */
     text-align: center; 
-    font-weight: bold;
+    
 }
-
-
 
 /* 차트 보여주기 */
 .scoreGraph{
-    /* background-color: skyblue; */
-    border: 5px solid black;
+    background-color: white;
+    border-radius: 10px;
     position: relative;
-    width: 800px;
     height: 400px;
     margin-bottom: 10px;
 }
 
 #scoreChart{
     position: absolute;
-    width: 100%;
     height: 100%;
 }
-/* 모달 */
-.resultModal{
-    font: bold;
-    display: flex;
-    /* margin: auto; */
-    
-}
 
-#modalOpenButton {
-    margin-top: 50px;
-    margin-left: 100px;
+
+#goBack{
     width: 200px;
     height: 100px;
-    background-color: #007bff; /* 파란색 배경 */
-    color: #fff; /* 흰색 텍스트 */
+    background-color: #48C7E3; 
+    color: black; 
     cursor: pointer;
     font-weight: bold; /* 텍스트를 진하게 */
     font-size: 24px;
@@ -249,71 +330,10 @@ th, td {
     transition: background-color 0.3s, box-shadow 0.3s; /* 부드러운 효과 */
 }
 
-#modalOpenButton:hover {
+#goBack:hover {
     background-color: #0056b3; /* 어두운 파란색 배경 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
 }
-
-
-  #goBack{
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 200px;
-    height: 100px;
-    background-color: #007bff; /* 파란색 배경 */
-    color: #fff; /* 흰색 텍스트 */
-    cursor: pointer;
-    font-weight: bold; /* 텍스트를 진하게 */
-    font-size: 24px;
-    border-radius: 10px;
-    text-align: center; /* 텍스트 중앙 정렬 */
-    display: flex; /* 버튼 중앙 정렬을 위한 flexbox */
-    align-items: center; /* 수직 중앙 정렬 */
-    justify-content: center; /* 수평 중앙 정렬 */
-    border: none; /* 기본 버튼 테두리 제거 */
-    transition: background-color 0.3s, box-shadow 0.3s; /* 부드러운 효과 */
-}
-
-  #goBack:hover {
-    background-color: #0056b3; /* 어두운 파란색 배경 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
-}
-
-  
-  #modalContainer {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  #modalContent {
-    position: relative;
-    background-color: #ffffff;
-    width: 800px;
-    height: 600px;
-    padding: 15px;
-  }
-
-  #modalCloseButton{
-    position: absolute;
-    width: 100px;
-    margin-top: 20px;
-    margin-left: 350px;
-  }
-
-  
-  #modalContainer.hidden {
-    display: none;
-  }
-
-  
-
 
 
 
