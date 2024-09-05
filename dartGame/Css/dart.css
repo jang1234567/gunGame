@@ -18,20 +18,20 @@ body {
 /* 모바일 */
 @media (max-width: 480px) {
     body {
-        transform: scale(0.5); /* 모바일에서 축소 비율 조정 */
+        transform: scale(0.3); /* 모바일에서 축소 비율 조정 */
     }
 }
 
 /* 태블릿 */
 @media (min-width: 481px) and (max-width: 768px) {
     body {
-        transform: scale(0.5); /* 태블릿에서 축소 비율 조정 */
+        transform: scale(0.3); /* 태블릿에서 축소 비율 조정 */
     }
 }
 /* 노트북 */
 @media (min-width: 769px) and (max-width: 1200px) {
     body {
-        transform: scale(0.8); /* 노트북에서 축소 비율 조정 */
+        transform: scale(0.5); /* 노트북에서 축소 비율 조정 */
     }
 }
 
