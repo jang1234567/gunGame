@@ -192,7 +192,7 @@ window.onload = function () {
             text: "점수",
           },
           beginAtZero: true,
-          min: 1, // y축 최소값 설정
+          min: 0, // y축 최소값 설정
           max: 10, // y축 최대값 설정
           stepSize: 1, // y축 간격을 1단위로 설정
         },

@@ -34,8 +34,8 @@ body {
     width: 100px;
     height: 10px;
     background: linear-gradient(90deg, #fff, #f00);
-    top: 50%;
     animation: bulletMove 5s ease-in-out infinite;
+    /* margin-bottom: 50px; */
 }
 
 .gameStart {
@@ -47,8 +47,9 @@ body {
 }
 
 .gameStart button {
+    /* margin-top: 50px; */
     font-size: 2rem; /* 큰 텍스트 */
-    padding: 20px 40px; /* 큰 버튼 */
+    padding: 20px 40px; 
     background-color: #ff4500; /* 눈에 띄는 색상 */
     color: white;
     border: none;
