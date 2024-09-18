@@ -15,7 +15,7 @@
 ### 다트게임 시작 전
 ![다트게임 시작 전](https://github.com/user-attachments/assets/b533e451-eca6-4f48-97a3-d8a7a13d1ac6)
 
-### 다트게임 시작 후
+### 다트게임 종료
 ![다트게임 시작 후](https://github.com/user-attachments/assets/b9fd22e1-aeb5-4975-9ba7-c4913b860c9f)
 
 ## 🚀 기능
