@@ -1,7 +1,11 @@
 # Gun Game
 
 ## 🎮 게임 링크
+
 [Gun Game 플레이하기](https://dartgame.netlify.app/)
+
+**링크:** [https://dartgame.netlify.app/](https://dartgame.netlify.app/)
+
 
 ## 📸 게임 스크린샷
 
